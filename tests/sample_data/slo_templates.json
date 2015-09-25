@@ -1,0 +1,23 @@
+{
+   "slo_templates":[
+      {
+         "links":{
+            "uri":"/api/v2/configuration/slo_templates/2037c425-7c4f-4d87-8c6f-adb37a1ac874",
+            "slos":"/api/v2/configuration/slos?ids=ffa87392-4d55-4fa2-962a-7697d17732f4,e3371ade-3960-46a7-879d-655b7ce31440,62518c23-212b-4d59-85be-10d0f5d1cdce,12684ed0-6a1e-4f6c-b5cd-21b73f4a2cd1,d9677b5d-26af-49ee-b395-bb4e47beeb41,37ae7d50-5ebd-452e-aae1-cf8a69f61f27,87bad876-d5de-4b3a-991d-741fb11e82cd,53577718-3480-42cf-bdcc-bae770768d65,902be126-dff8-40a7-b34d-0cf52e5578c5,dc10c5e5-1e8c-4cf5-981e-e22d0d447995,27829c9e-a6b3-4cb6-9404-cb05cf5cac48,94f631b0-dcb0-43b8-b4de-5c6945e4e068,7f544192-dfbf-473b-a21e-69f70d350366,77be098d-11ac-49ba-afbf-d63f5043bb05,22f48ba8-484b-4174-ad2d-d8256028ed4b,f0a28dbf-d723-4270-a86b-5d7e8746c47e"
+         },
+         "class_name":"performance",
+         "operators":[
+            {
+               "operator":"in_range",
+               "description":"Service Compute Units value available for each VM shall be within <[MIN];[MAX]> range."
+            }
+         ],
+         "deleted":false,
+         "value_type":"range",
+         "element_name":"vm",
+         "id":"2037c425-7c4f-4d87-8c6f-adb37a1ac874",
+         "unit":"SCU",
+         "slo_type":"assured-scu-vm"
+      }
+   ]
+}

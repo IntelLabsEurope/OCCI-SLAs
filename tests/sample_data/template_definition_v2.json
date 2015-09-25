@@ -1,0 +1,80 @@
+{
+  "name": "Ran Inc",
+  "scheme": "http://sla.ran.org/agreements#",
+  "templates": {
+    "gold": {
+      "terms": {
+        "compute": {
+          "desc": "This is the service term for a compute instance. It contains all the configuration for the relevant metrics.",
+          "type": "SERVICE-TERM",
+          "metrics": {
+            "vcpu": {
+              "value": 4
+            },
+            "os": {
+              "value": "ubuntu"
+            },
+            "memory": {
+              "value": 2048
+            }
+          }
+        },
+        "availability": {
+          "desc": "This is the SLO term for an  instance regarding the availability. It contains all the relevant metrics, the condition value and margin.",
+          "type": "SLO-TERM",
+          "metrics": {
+            "uptime": {
+              "value": 98,
+              "limiter_type":"margin",
+              "limiter_value": 2
+            }
+          },
+          "remedy": "0.10"
+        },
+        "efficiency": {
+          "desc": "This is a test SLO term for an  instance regarding the power efficiency.",
+          "type": "SLO-TERM",
+          "metrics": {
+            "power": {
+              "value": 120.0,
+              "limiter_type":"max"
+            }
+          },
+          "remedy": "0.10"
+        }
+      }
+    },
+    "silver": {
+      "terms":{
+        "compute": {
+          "desc": "",
+          "type": "SERVICE-TERM",
+          "metrics": {
+            "vcpu": {
+              "value": 1
+            },
+            "os": {
+              "value": "ubuntu"
+            },
+            "memory": {
+              "value": 1024
+            }
+          }
+        },
+        "availability": {
+          "desc": "",
+          "type": "SLO-TERM",
+          "metrics": {
+            "uptime": {
+              "value": 85,
+              "limiter_type":"margin",
+              "limiter_value": 5
+            }
+          },
+          "remedy": "0.05"
+        }
+      }
+    }
+  }
+
+}

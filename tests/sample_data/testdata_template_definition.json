@@ -1,0 +1,324 @@
+{
+    "persistable": {
+        "name": "Ran Inc",
+        "scheme": "http://sla.ran.org/agreements#",
+        "templates": {
+            "RAN_GOLD": {
+                "terms":{
+                    "compute": {
+                        "type":"SERVICE-TERM",
+                        "desc":"",
+                        "metrics":{
+                            "vcpu": {
+                                "value": 10
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "max_incorrect_type": {
+        "name": "Test Template List",
+        "scheme": "one",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "compute": {
+                        "type":"SERVICE-TERM",
+                        "desc":"",
+                        "metrics":{
+                            "vcpu": {
+                                "value": 10.2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "max_lt_value": {
+        "name": "Test Template List",
+        "scheme": "two",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "availability": {
+                        "desc": "This is the service term.",
+                        "type": "SLO-TERM",
+                        "metrics": {
+                            "uptime": {
+                              "value": 85,
+                              "limiter_type": "max"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "no_terms": {
+        "name": "Test Template List",
+        "scheme": "",
+        "templates": {
+            "temp_1": {
+                "terms":{}
+                },
+            "temp_2": {
+                "terms":{}
+            }
+        }
+    },
+    "no_metrics": {
+        "name": "Test Template List",
+        "scheme": "",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "compute": {}
+                }
+            }
+        }
+    },
+    "unknown_metric": {
+        "name": "Test Template List",
+        "scheme": "",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "compute": {
+                        "unknown": {}
+                    }
+                }
+            }
+        }
+    },
+    "not_integer": {
+        "name": "Test Template List",
+        "scheme": "",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "compute": {
+                        "type":"SERVICE-TERM",
+                        "desc":"",
+                        "metrics":{
+                            "vcpu": {
+                                "value": 10.2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "not_real": {
+        "name": "Test Template List",
+        "scheme": "",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "availability": {
+                        "desc": "This is the service term.",
+                        "type": "SLO-TERM",
+                        "metrics": {
+                            "uptime": {
+                              "value": 85.0,
+                              "limiter_type": "max"
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    },
+    "not_string": {
+        "name": "Test Template List",
+        "scheme": "",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "compute": {
+                        "desc": "This is the service term for a compute instance. It contains all the configuration for the relevant metrics.",
+                        "type": "SERVICE-TERM",
+                        "metrics": {
+                            "os": {
+                                "value": 12
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    },
+    "min_incorrect_type": {
+        "name": "Test Template List",
+        "scheme": "one",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "availability": {
+                        "desc": "This is the service term.",
+                        "type": "SLO-TERM",
+                        "metrics": {
+                            "uptime": {
+                              "value": 85,
+                              "limiter_type": "min"
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    },
+    "min_gt_value": {
+        "name": "Test Template List",
+        "scheme": "two",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "availability": {
+                        "desc": "This is the service term.",
+                        "type": "SLO-TERM",
+                        "metrics": {
+                            "uptime": {
+                                "value": 85,
+                                "limiter_type": "min"
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    },
+    "margin_bad_type": {
+        "name": "Test Template List",
+        "scheme": "two",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "availability": {
+                        "desc": "This is the service term.",
+                        "type": "SLO-TERM",
+                        "metrics": {
+                            "uptime": {
+                              "value": 85,
+                              "limiter_type": "margin",
+                              "limiter_value": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    },
+    "margin_bad_value": {
+        "name": "Test Template List",
+        "scheme": "two",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "availability": {
+                        "desc": "This is the service term.",
+                        "type": "SLO-TERM",
+                        "metrics": {
+                            "uptime": {
+                              "value": 85,
+                              "limiter_type": "margin",
+                              "limiter_value": "abc"
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    },
+    "bad_enum_container": {
+        "name": "Test Template List",
+        "scheme": "two",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "compute": {
+                        "desc": "This is the service term.",
+                        "type": "SLO-TERM",
+                        "metrics": {
+                            "os": {
+                                "value": {},
+                                "limiter_type": "enum"
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    },
+    "bad_enum_type": {
+        "name": "Test Template List",
+        "scheme": "two",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "compute": {
+                        "desc": "This is the service term.",
+                        "type": "SLO-TERM",
+                        "metrics": {
+                            "os": {
+                                "value": ["windows", "solaris", 45],
+                                "limiter_type": "enum"
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    },
+    "value_not_enum": {
+        "name": "Test Template List",
+        "scheme": "two",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "compute": {
+                        "desc": "This is the service term.",
+                        "type": "SLO-TERM",
+                        "metrics": {
+                            "os": {
+                                "value": ["windows", "solaris"],
+                                "limiter_type": "enum"
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    },
+    "incorrect_limits": {
+        "name": "Test Template List",
+        "scheme": "two",
+        "templates": {
+            "temp_1": {
+                "terms":{
+                    "compute": {
+                        "desc": "This is the service term.",
+                        "type": "SERVICE-TERM",
+                        "metrics": {
+                            "os": {
+                                "value": 12
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

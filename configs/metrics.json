@@ -1,0 +1,56 @@
+{
+    "System uptime": {
+        "name": "System uptime value measured from MaaS",
+        "value": "real",
+        "limiters": ["margin", "max", "min"],
+        "monitoring":"dummy"
+    },
+    "Available memory": {
+        "name": "System available memory (free+cached+buffers) measured from MaaS",
+        "value": "integer",
+        "limiters": ["margin", "max", "min"],
+        "monitoring":"dummy"
+    },
+    "Total memory": {
+        "name": "System total memory measured from MaaS",
+        "value": "integer",
+        "limiters": ["margin", "max", "min"],
+        "monitoring":"dummy"
+    },
+    "Processor load (1 min average per core)": {
+        "name": "System processor load measured from MaaS",
+        "value": "real",
+        "limiters": ["margin", "max", "min"],
+        "monitoring":"dummy"
+    },
+    "Number of processes": {
+        "name": "System's total number of processes in any state measured from MaaS",
+        "value": "integer",
+        "limiters": ["max", "min"],
+        "monitoring":"dummy"
+    },
+    "Free disk space on $1": {
+        "name": "System's free hd disk space measured from MaaS",
+        "value": "integer",
+        "limiters": ["max", "min"],
+        "monitoring":"dummy"
+    },
+    "DSS number of active player data": {
+        "name": "Number of connections for players in the DSS service",
+        "value": "integer",
+        "limiters": ["max", "min"],
+        "monitoring":"dummy"
+    },
+    "uptime": {
+        "name": "metric used for unittest",
+        "value": "integer",
+        "limiters": ["margin", "max", "min"],
+        "monitoring":"dummy"
+    },
+    "power": {
+        "name": "metric used for unittest",
+        "value": "real",
+        "limiters": ["margin", "max", "min"],
+        "monitoring":"dummy"
+    }
+}

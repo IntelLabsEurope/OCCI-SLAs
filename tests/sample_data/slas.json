@@ -1,0 +1,25 @@
+{
+   "slas":[
+      {
+         "flavors":[
+
+         ],
+         "name":"Unsecure Platinum VM - no burst",
+         "links":{
+            "uri":"/api/v2/configuration/slas/aa8f8713-925d-43ea-b8c7-77c4af5cc9cc",
+            "slos":"/api/v2/configuration/slos?ids=ffa87392-4d55-4fa2-962a-7697d17732f4,9b92ce1d-75db-47ac-9bc3-1aa935ca0ef3"
+         },
+         "deleted":false,
+         "enabled":true,
+         "slo_ids":[
+            "ffa87392-4d55-4fa2-962a-7697d17732f4",
+            "9b92ce1d-75db-47ac-9bc3-1aa935ca0ef3"
+         ],
+         "is_default":false,
+         "class_id":"7e472ace-68c8-4244-9380-7265d467e4e9",
+         "version":1,
+         "type":"vm",
+         "id":"aa8f8713-925d-43ea-b8c7-77c4af5cc9cc"
+      }
+   ]
+}

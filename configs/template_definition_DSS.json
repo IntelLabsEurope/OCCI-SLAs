@@ -1,0 +1,56 @@
+{
+    "name": "DSS Inc",
+    "scheme": "http://sla.dss.org/agreements#",
+    "templates": {
+        "dss_gold": {
+          "allowed_links": [],
+          "terms": {
+            "connections_load": {
+              "desc": "This is the SLO term for an instance of DSS regarding the connections of the players.",
+              "type": "SLO-TERM",
+              "metrics": {
+                "DSS number of active player data": {
+                  "value": 100,
+                  "limiter_type":"max"
+                }
+              },
+              "remedy": "0.10"
+            }
+          }
+        },
+        "dss_silver": {
+          "allowed_links": [],
+          "terms": {
+            "connections_load": {
+              "desc": "This is the SLO term for an instance of DSS regarding the connections of the players.",
+              "type": "SLO-TERM",
+              "metrics": {
+                "DSS number of active player data": {
+                  "value": 50,
+                  "limiter_type":"max"
+                }
+              },
+              "remedy": "0.10"
+            }
+          }
+        },
+        "dss_bronze": {
+          "allowed_links": [],
+          "terms": {
+            "connections_load": {
+              "desc": "This is the SLO term for an instance of DSS regarding the connections of the players.",
+              "type": "SLO-TERM",
+              "metrics": {
+                "DSS number of active player data": {
+                  "value": 25,
+                  "limiter_type":"max"
+                }
+              },
+              "remedy": "0.10"
+            }
+          }
+        }
+      
+    }
+
+}

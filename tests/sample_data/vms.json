@@ -1,0 +1,108 @@
+{
+  "vms": [
+    {
+      "status": {
+        "sla_messages": [
+          "SLA status: Not violated (for 0h 31m)"
+        ],
+        "locked": false,
+        "sla_status": 1,
+        "aggressor": 1,
+        "operational": 2,
+        "trust_details": {
+          "bios": 3,
+          "vmm": 3
+        },
+        "long_message": "VM is assigned a default SLA. VM is powered on. ",
+        "health": 3,
+        "victim": 1,
+        "trust": 3,
+        "short_message": "VM is assigned a default SLA."
+      },
+      "links": {
+        "flavors": "/api/v2/configuration/flavors/94f50822-749d-4e36-8254-1c90e9de0180",
+        "logs": "/api/v2/logs?vm=c93edfb7-0ac9-4b69-8a19-23935e8e1d80",
+        "slas": "/api/v2/configuration/slas/91436e36-94d3-42a7-9cd8-057c6a97bbe7",
+        "uri": "/api/v2/vms/c93edfb7-0ac9-4b69-8a19-23935e8e1d80",
+        "vm_instantiation_detailed": "/api/v2/vm_instantiation_detailed/c93edfb7-0ac9-4b69-8a19-23935e8e1d80",
+        "nodes": "/api/v2/nodes/37333036-3831-5A43-4A32-313231314335",
+        "vm_trust_reports": "/api/v2/vm_trust_reports/c93edfb7-0ac9-4b69-8a19-23935e8e1d80",
+        "vm_instantiation_simple": "/api/v2/vm_instantiation_simple/c93edfb7-0ac9-4b69-8a19-23935e8e1d80"
+      },
+      "vm_instantiation_detailed_id": "c93edfb7-0ac9-4b69-8a19-23935e8e1d80",
+      "vm_instantiation_simple_id": "c93edfb7-0ac9-4b69-8a19-23935e8e1d80",
+      "id": "c93edfb7-0ac9-4b69-8a19-23935e8e1d80",
+      "victim_ids": [
+      ],
+      "cloud_id": "c93edfb7-0ac9-4b69-8a19-23935e8e1d80",
+      "utilization": {
+        "ipc": 0.42,
+        "uptime": 1964,
+        "scu_total": 0.0,
+        "scu_overload": 0.03,
+        "cores": {
+          "system": {
+            "used": [
+              {
+                "core": "-1",
+                "socket": "1"
+              }
+            ]
+          }
+        },
+        "threads": [
+          {
+            "scu_current": 0.0,
+            "id": 22951
+          }
+        ],
+        "io": null,
+        "memory": "524288 KB",
+        "scu_burst": 0.0,
+        "cpu": 5.97,
+        "network": null
+      },
+      "fixed_ips": [
+        "10.1.7.14"
+      ],
+      "graphite_url": "/render?target=stats.SAM",
+      "floating_ips": null,
+      "capabilities": {
+        "scu_allocated": 0.0,
+        "cores": 1,
+        "scu_allocated_max": 1.0,
+        "memory_size": "524288 KB",
+        "scu_allocated_min": 0.0
+      },
+      "sla_id": "91436e36-94d3-42a7-9cd8-057c6a97bbe7",
+      "vm_name": "ttt",
+      "macs": [
+        "fa:16:3e:bc:e7:29"
+      ],
+      "contention": {
+        "threads": [
+          {
+            "llc": {
+              "value": 0.51,
+              "label": "LOW"
+            },
+            "id": 22951
+          }
+        ],
+        "system": {
+          "llc": {
+            "value": 0.51,
+            "label": "LOW"
+          }
+        }
+      },
+      "sla_name": "Default unsecure vm SLA for assured-scu-vm mode",
+      "vm_trust_report_id": "c93edfb7-0ac9-4b69-8a19-23935e8e1d80",
+      "node_id": "37333036-3831-5A43-4A32-313231314335",
+      "node_name": "compute1",
+      "aggressor_ids": [
+      ],
+      "flavor_id": "94f50822-749d-4e36-8254-1c90e9de0180"
+    }
+  ]
+}

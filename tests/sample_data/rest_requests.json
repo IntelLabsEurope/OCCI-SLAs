@@ -1,0 +1,17 @@
+{
+    "agree_std_1": {
+        "Category": "agreement;scheme=\"http://schemas.ogf.org/occi/sla#\";class=\"kind\",epc;scheme=\"http://www.ran_epc_sp.org/templates#\";class=\"mixin\"",
+        "X-OCCI-ATTRIBUTE": "epc.occi.SLO_B=\"Bad\",epc.occi.SLO_K=\"Karte\"",
+        "Content-Type": "text/occi"
+    },
+    "agree_std_2": {
+        "Category": "agreement;scheme=\"http://schemas.ogf.org/occi/sla#\";class=\"kind\",epc;scheme=\"http://www.ran_epc_sp.org/templates#\";class=\"mixin\"",
+        "X-OCCI-ATTRIBUTE": "epc.occi.SLO_B=\"magda\",epc.occi.SLO_K=\"ola\"",
+        "Content-Type": "text/occi"
+    },
+    "agree_lnk_1": {
+        "Category": "agreement;scheme=\"http://schemas.ogf.org/occi/sla#\";class=\"kind\",epc;scheme=\"http://www.ran_epc_sp.org/templates#\";class=\"mixin\"",
+        "X-OCCI-ATTRIBUTE": "epc.occi.SLO_B=\"Bad\",epc.occi.SLO_K=\"Karte\"",
+        "Content-Type": "text/occi"
+    }
+}

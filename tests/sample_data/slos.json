@@ -1,0 +1,18 @@
+{
+   "slos":[
+      {
+         "description":"SLO shall be used on untrusted node.",
+         "links":{
+            "slo_templates":"/api/v2/configuration/slo_templates/b1c921c2-2307-4c3d-99c1-92b793fe4985",
+            "uri":"/api/v2/configuration/slos/9b92ce1d-75db-47ac-9bc3-1aa935ca0ef3",
+            "slas":"/api/v2/configuration/slas/aa8f8713-925d-43ea-b8c7-77c4af5cc9cc"
+         },
+         "deleted":false,
+         "value":"0",
+         "sla_id":"aa8f8713-925d-43ea-b8c7-77c4af5cc9cc",
+         "operator":"equals",
+         "slo_template_id":"b1c921c2-2307-4c3d-99c1-92b793fe4985",
+         "id":"9b92ce1d-75db-47ac-9bc3-1aa935ca0ef3"
+      }
+   ]
+}
